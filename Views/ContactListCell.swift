@@ -8,5 +8,12 @@
 import UIKit
 
 class ContactListCell: UITableViewCell {
+    @IBOutlet var imageContact: UIImageView!
+    @IBOutlet weak var labelName: UILabel!
     
+    
+    func configure(image: UIImage!, name: String){
+        labelName.text = name
+        imageContact.image.self = image
+    }
 }
