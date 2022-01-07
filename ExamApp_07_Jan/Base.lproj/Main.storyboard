@@ -86,7 +86,7 @@
         <!--Call Agent View Controller-->
         <scene sceneID="PAy-E6-UsZ">
             <objects>
-                <viewController id="oXg-vf-Rwf" customClass="CallAgentViewController" customModule="ExamApp_07_Jan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oXg-vf-Rwf" customClass="CallAgentViewController" customModule="ExamApp_07_Jan" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zfj-67-QgN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,21 +95,21 @@
                                 <rect key="frame" x="86" y="122" width="242" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoZ-GY-KOb">
-                                <rect key="frame" x="186" y="67" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-Ds-eAR">
+                                <rect key="frame" x="117" y="410.5" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ld-7E-EaD">
-                                <rect key="frame" x="165" y="572" width="67" height="31"/>
+                                <rect key="frame" x="156" y="584" width="85" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-Ds-eAR">
-                                <rect key="frame" x="177" y="467" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoZ-GY-KOb">
+                                <rect key="frame" x="116" y="69" width="182" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -119,6 +119,12 @@
                         <viewLayoutGuide key="safeArea" id="rBK-Yy-AVM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="callButton" destination="6ld-7E-EaD" id="hOB-IL-n19"/>
+                        <outlet property="imageView" destination="96e-46-MSc" id="qSg-Yc-z8w"/>
+                        <outlet property="nameLabel" destination="EoZ-GY-KOb" id="Q2d-8F-guV"/>
+                        <outlet property="numberLabel" destination="hCZ-Ds-eAR" id="MnS-UO-8Gr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHg-k3-w0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

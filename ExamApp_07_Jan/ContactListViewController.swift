@@ -14,13 +14,13 @@ class ContactViewController: UITableViewController {
     static let showCallSegueIdentifier = "CallAgentSegue"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == Self.showCallSegueIdentifier,
-//           let destination = segue.destination as? CallAgentViewController,
-//           let cell = sender as? UITableViewCell
-//           let indexPath = tableView.indexPath(for: cell) {
-//            let agent = Model.contats[indexPath.row]
-//            destination.configure(with: agent)
-//        }
+        if segue.identifier == Self.showCallSegueIdentifier,
+           let destination = segue.destination as? CallAgentViewController,
+           let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            let agent = Model.contats[indexPath.row] 
+            destination.configure(with: agent)
+        }
     }
     
     override func viewDidLoad() {
